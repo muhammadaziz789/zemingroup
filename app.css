@@ -25,6 +25,26 @@
     .font-gilroy {
         font-family: 'Gilroy';
     }
+
+    .primary-color-text {
+        color: #0E518F;
+    }
+
+    .primary-color-bg {
+        background-color: #0E518F;
+    }
+
+    .dark-color {
+        color: #111;
+    }
+
+    .def-hover-none {
+        @apply hover:text-[#fff] hover:no-underline;
+    }
+
+    .gallery-img-anim {
+        @apply hover:scale-105 transition duration-300;
+    }
 }
 
 @font-face {
