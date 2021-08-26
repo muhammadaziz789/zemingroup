@@ -30,6 +30,7 @@
     left: 0;
     background: linear-gradient(90deg, #111111 0%, rgba(17, 17, 17, 0) 100%);
     opacity: 0.52;
+    z-index: -1;
 }
 
 .main-bottom-content-grid {
