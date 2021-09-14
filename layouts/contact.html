@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ested</title>
+    <!-- tailwind config css -->
+    <link rel="stylesheet" href="../assets/css/tailwind.css"/>
+    <!-- custom scss -->
+    <link rel="stylesheet" href="../assets/scss/main.css">
+    <!-- uikit cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css" />
+    <!-- custom font -->
+    <link rel="stylesheet" href="../assets/css/font.css">
+</head>
+<body>
+    
+    <div uk-sticky="animation: uk-animation-fade; sel-target: .header; cls-active: uk-navbar-sticky bg-[#fff]; cls-inactive: uk-navbar-transparent z-[9]; top: 200;">
+        <header class="header absolute top-0 left-0 w-full z-10 border-b border-[#fff] border-opacity-[0.10]" uk-scrollspy="target: .animateText; cls: uk-animation-slide-left-small;delay: 300">
+            <div class="uk-container uk-container-large">
+                <nav class="uk-flex-middle uk-flex-between uk-padding uk-padding-remove-horizontal" uk-grid>
+                    
+                    <ul class="uk-width-1-6@l uk-width-auto">
+                        <li class="logo-white">
+                            <a class="" href="index.html">
+                                <img class="uk-logo" src="../assets/images/svg/Estet.svg" alt="logo">
+                            </a>
+                        </li>
+                        <li class="logo-black">
+                            <a class="" href="index.html">
+                                <img class="uk-logo" src="../assets/images/svg/Estet-black.svg" alt="logo">
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                    <ul class="uk-visible@m uk-flex-between" uk-grid>
+                        
+                        <li class="uk-active animateText">
+                            <a class="relative nav-link navbar-active-link  link-hover active text-[#fff] font-semibold" href="index.html">
+                                Bosh sahifa
+                            </a>
+                        </li>
+                        <li class="animateText">
+                            <a class="relative nav-link navbar-active-link  link-hover text-[#fff] font-semibold" href="service.html">
+                                Hizmatlarimiz
+                            </a>
+                        </li>
+                        <li class="animateText">
+                            <a class="relative nav-link navbar-active-link  link-hover text-[#fff] font-semibold" href="job.html">
+                                Ishlarimiz
+                            </a>
+                        </li>
+                        <li class="animateText">
+                            <a class="relative nav-link navbar-active-link  link-hover text-[#fff] font-semibold" href="about.html">
+                                Biz haqimizda
+                            </a>
+                        </li>
+                        <li class="animateText">
+                            <a class="relative nav-link navbar-active-link  link-hover text-[#fff] font-semibold" href="javascript:void(0);">
+                                Kontaktlar
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <ul class="uk-visible@m flex justify-end uk-width-1-6 uk-padding-remove-left">
+                        <li>
+                            <a href="javascript:void(0);" class="nav-link font-semibold hover:text-[#fff] hover:no-underline text-[#fff] lang inline-flex items-center px-4 font-semibold" uk-scrollspy="cls: uk-animation-slide-right; delay: 200;" style="animation-duration: .8s">
+                                UZ
+                                <svg class="w-4 h-4 fill-current ml-1"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg>
+                            </a>
+                            <div class="uk-padding-remove rounded-[5px]" style="min-width: 100px;" uk-dropdown="pos: bottom-justify;animation: uk-animation-slide-top-small; duration: 400; mode: click">
+                                
+                                <ul class="uk-grid uk-grid-small uk-flex-middle uk-flex-column uk-padding-small" uk-grid >
+                                    <li class="uk-width-auto">
+                                        <a href="javascript:void(0);" class="link-hover text-[#1c314e] font-semibold">
+                                            RU
+                                        </a>
+                                    </li>
+                                    <li class="uk-width-auto">
+                                        <a href="javascript:void(0);" class="link-hover text-[#1c314e] font-semibold">
+                                            EN
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li uk-scrollspy="cls: uk-animation-slide-right; delay: 400;">
+                            <a class="nav-link font-semibold link-hover text-[#fff] flex items-center" href="tel:+998973040440" target="_blank">
+                                <img class="mr-[7px] nav-call-white" src="../assets/images/svg/call.svg" alt="call">
+                                <img class="mr-[7px] nav-call-black" src="../assets/images/svg/call-black.svg" alt="call">
+                                <span class="">
+                                    97 304 04 40
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="uk-hidden@m">
+                        <li>
+                            <a uk-toggle="target: #offcanvas-overlay" class="" href="javascript:void(0);">
+                                <img class="nav-menu-img-white" src="../assets/images/svg/hamburger.svg" alt="menu">
+                                <img class="nav-menu-img-black" src="../assets/images/svg/hambuerger-black.svg" alt="menu">
+                            </a>             
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <div id="offcanvas-overlay" uk-offcanvas="flip: true; overlay: true">
+            <div class="uk-offcanvas-bar">
+                
+                <button class="uk-offcanvas-close" style="color: #fff;" type="button" uk-close></button>
+                
+                <ul class="uk-grid uk-grid-medium uk-flex-middle uk-flex-center uk-flex-column
+                uk-grid-column-collapse uk-margin-large-top"
+                uk-grid
+                >
+                <li>
+                    <a class="text-[#fff] link-hover link-hover font-semibold" href="index.html">
+                        Bosh sahifa
+                    </a>
+                </li>
+                <li>
+                    <a class="text-[#fff] link-hover link-hover  font-semibold" href="service.html">
+                        Hizmatlarimiz
+                    </a>
+                </li>
+                <li>
+                    <a class="text-[#fff] link-hover link-hover  font-semibold" href="job.html">
+                        Ishlarimiz
+                    </a>
+                </li>
+                <li>
+                    <a class="text-[#fff] link-hover  link-hover  font-semibold" href="about.html">
+                        Biz haqimizda
+                    </a>
+                </li>
+                <li>
+                    <a class="text-[#fff] link-hover link-hover  font-semibold" href="javascript:void(0);">
+                        Kontaktlar
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- main section start -->
+<main class="uk-section uk-margin-bottom uk-margin-large-top" uk-scrollspy="target: .animateText; cls: uk-animation-slide-left-medium;delay: 300">
+    
+    <div class="uk-grid-large uk-child-width-1-1 uk-margin-large-top" uk-grid>
+        
+        <div>
+            <div class="uk-container uk-container-large">
+                
+                <div class="uk-grid-small uk-child-width-1-1" uk-grid>
+                    
+                    <div>
+                        <div class="uk-grid-small uk-child-width-1-1 uk-text-center uk-text-left@s" uk-grid>
+                            <div class="uk-visible@s animateText">
+                                <div class="uk-display-inline-block">
+                                    <a href="" class="link-hover text-[#1C314E] line-animation-black flex items-center">
+                                        <img class="uk-display-inline-block mr-2" src="../assets/images/svg/arrow-left-black.svg" style="transform: rotate(180deg);" alt="arrow">
+                                        <p class="text-[#1C314E] text-xl uk-display-inline-block font-medium m-0">Orqaga</p>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="animateText">
+                                <div>
+                                    <h1 class="heading-main text-[#1C314E] sm:border-none pb-3 sm:pb-0 border-b-2 border-[#1c314e] border-opacity-[0.20] uk-display-inline-block">Kontaklat</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t-4 border-[#1C314E] border-opacity-[.12]"></div>
+        
+    </div>
+    
+</main>
+<!-- main section end -->
+
+
+<section class="uk-section uk-padding-remove-top" uk-scrollspy="target: .animateText; cls: uk-animation-slide-left-medium;delay: 300">
+    <div class="uk-container uk-container-large">
+        
+        <div class="uk-child-width-1-1" uk-grid>
+            <div>
+                <div class="uk-child-width-1-3@m uk-child-width-1-2@s uk-grid-match" uk-grid>
+                    <div class="animateText">
+                        <a href="javascript:void(0);" class="rounded-[12px] bg-[#C4C4C4] bg-opacity-[.10] border-4 border-[#1C314E] border-opacity-[.12] uk-padding link-hover">
+                            <div class="uk-child-width-1-2 uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-1-5">
+                                    <div>
+                                        <img class="w-full h-full object-cover" src="../assets/images/contact/map.svg" alt="map">
+                                    </div>
+                                </div>
+                                
+                                <div class="uk-width-3-4">
+                                    <div class="">
+                                        <h3 class="heading-section-small text-[#1C314E]">Joylashuv</h3>
+                                        <div class="text-[#1C314E] mt-2">
+                                            <p class="m-0 font-semibold">
+                                                Estet klinikasinig joylashuvi
+                                                shu yerga yoziladi
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a> 
+                    </div>
+
+                    <div class="animateText">
+                        <a href="javascript:void(0);" class="rounded-[12px] bg-[#C4C4C4] bg-opacity-[.10] border-4 border-[#1C314E] border-opacity-[.12] uk-padding link-hover">
+                            <div class="uk-child-width-1-2 uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-1-5">
+                                    <div>
+                                        <img class="w-full h-full object-cover" src="../assets/images/contact/call.svg" alt="call">
+                                    </div>
+                                </div>
+                                
+                                <div class="uk-width-3-4">
+                                    <div class="">
+                                        <h3 class="heading-section-small text-[#1C314E]">Telefon raqam</h3>
+                                        <div class="text-[#1C314E] mt-2">
+                                            <p class="m-0 font-semibold">
+                                                +998 97 374 12 12
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a> 
+                    </div>
+
+                    <div class="animateText">
+                        <a href="javascript:void(0);" class="rounded-[12px] bg-[#C4C4C4] bg-opacity-[.10] border-4 border-[#1C314E] border-opacity-[.12] uk-padding link-hover">
+                            <div class="uk-child-width-1-2 uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-1-5">
+                                    <div>
+                                        <img class="w-full h-full object-cover" src="../assets/images/contact/sms-notification.svg" alt="mail">
+                                    </div>
+                                </div>
+                                
+                                <div class="uk-width-3-4">
+                                    <div class="">
+                                        <h3 class="heading-section-small text-[#1C314E]">Elektron pochta</h3>
+                                        <div class="text-[#1C314E] mt-2">
+                                            <p class="m-0 font-semibold">
+                                                Estetclinic@gmail.com
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a> 
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="animateText">
+                <div class="h-[500px] rounded-[14px] border-4 border-[#1C314E] border-opacity-[0.12]">
+                    <iframe src="https://snazzymaps.com/embed/332818" width="100%" height="100%" style="border:none;" class="rounded-[14px]"></iframe>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+
+<!-- form section start -->
+<section class="uk-section section-gradient bg-norepeat bg-cover relative uk-margin-large-top" style="background-image: url('../assets/images/main/form-backgrond.png');">
+    <div class="uk-container uk-container-large" uk-scrollspy="target: .animateText; cls: uk-animation-slide-left-medium;delay: 300">
+        
+        <div class="uk-grid-large uk-flex-center@m uk-flex-between@s uk-flex-center uk-flex-middle uk-child-width-1-2@s relative z-10" uk-grid>
+            
+            <div class="animateText">
+                <div class="uk-child-width-1-1 uk-grid-small" uk-grid>
+                    <div>
+                        <h2 class="heading-section text-[#fff]">
+                            Bizning boshqa klinikalardan
+                            ustunliklarimiz va farqli
+                            jihatlarimiz
+                        </h2>
+                    </div>
+                    <div>
+                        <p class="p-white">
+                            It was popularised in the 1960s with the release of Letraset
+                            sheets containing passages, and more recently
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="uk-width-1-3@m uk-width-1-2@s animateText" style="backdrop-filter: blur(10px);">
+                <form action="" class="uk-child-width-1-1 bg-[#fff] bg-opacity-[0.06] rounded-[12px] uk-padding-large uk-margin-remove-left" uk-grid>
+                    <div class="uk-padding-remove-left"> 
+                        <div class="uk-grid-small uk-child-width-1-1" uk-grid>
+                            <label for="" class="text-[#fff] uk-margin-left">Ismingiz</label>
+                            <div>
+                                <input type="text" placeholder="Huzayfa ibn Baxrom" class="text-[#fff] tracking-wide border bg-transparent focus:outline-none uk-width-1-1 py-4 px-8 rounded-[30px]">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-padding-remove-left">
+                        <div class="uk-grid-small uk-child-width-1-1" uk-grid>
+                            <label for="" class="text-[#fff] uk-margin-left">Telefon raqamingiz</label>
+                            <div>
+                                <input type="text" placeholder="+998 99 XXX XX XX" class="text-[#fff] tracking-wide border bg-transparent focus:outline-none uk-width-1-1 py-4 px-8 rounded-[30px]">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="text-[#fff] uk-flex-center" uk-grid>
+                                <a href="" class="main-button-link bg-[#3175D4] uk-display-inline-block link-hover text-[#fff] wobble-vertical">Bog'lanish</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        
+    </div>
+</section>
+<!-- form section end -->
+
+
+<footer class="uk-section relative uk-margin-top uk-padding-remove-bottom" uk-scrollspy="target: .animateText; cls: uk-animation-slide-left-medium;delay: 300">
+    
+    <div class="border-b-4 border-t-4 border-[#1C314E] border-opacity-[.12] uk-padding-large uk-padding-remove-horizontal">
+        <div class="uk-container uk-container-large">
+            
+            <div class="uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center uk-text-left@s" uk-grid>
+                <div class="uk-width-expand animateText">
+                    <ul class="uk-grid-small uk-child-width-1-1" uk-grid>
+                        <li>
+                            <h2 class="text-[#1C314E] heading-section" style="font-family: 'Gilroy'; font-weight: 600;">Estet</h2>
+                        </li>
+                        <li>
+                            <p class="p-section">
+                                It was popularised in the 1960s with the release of Letraset
+                                sheets containing
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="uk-width-1-6@m uk-width-1-2@s animateText">
+                    <ul class="uk-grid-small uk-child-width-1-1 text-[#1C314E]" uk-grid>
+                        <li>
+                            <h4 class="text-[#1C314E] text-opacity-[0.60]" style="font-family: 'Gilroy'; font-weight: 600;">Web site</h4>
+                        </li>
+                        <li>
+                            <a href="" class="link-hover text-[#1C314E] line-animation-black font-semibold">
+                                Hizmatlarimiz
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="link-hover text-[#1C314E] line-animation-black font-semibold">
+                                Ishlarimiz
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="link-hover text-[#1C314E] line-animation-black font-semibold">
+                                Biz haqimizda
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="link-hover text-[#1C314E] line-animation-black font-semibold">
+                                Kontaktlar
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="uk-visible@s animateText">
+                    <ul class="uk-grid-small uk-child-width-1-1 text-[#1C314E]" uk-grid>
+                        <li>
+                            <h4 class="text-[#1C314E] text-opacity-[0.60]" style="font-family: 'Gilroy'; font-weight: 600;">Bizning ish vaqtimiz</h4>
+                        </li>
+                        <li>
+                            <div class="uk-child-width-1-2 uk-flex-between" uk-grid>
+                                <div>
+                                    <p class="text-[#1C314E] m-0 font-semibold">
+                                        Dush - Juma
+                                    </p>
+                                </div>
+                                
+                                <div>
+                                    <p class="text-[#1C314E] m-0 font-semibold">
+                                        8.00 - 18.00
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-child-width-1-2 uk-flex-between" uk-grid>
+                                <div>
+                                    <p class="text-[#1C314E] m-0 font-semibold">
+                                        Shanba
+                                    </p>
+                                </div>
+                                
+                                <div>
+                                    <p class="text-[#1C314E] m-0 font-semibold">
+                                        8.00 - 18.00
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-child-width-1-2 uk-flex-between" uk-grid>
+                                <div>
+                                    <p class="text-[#1C314E] m-0 font-semibold">
+                                        Yakshanba
+                                    </p>
+                                </div>
+                                
+                                <div>
+                                    <p class="text-[#1C314E] m-0 font-semibold">
+                                        -
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="animateText">
+                    <ul class="uk-grid-small uk-child-width-1-1 text-[#1C314E]  uk-text-center uk-text-left@s" uk-grid>
+                        <li>
+                            <h4 class="text-[#1C314E] text-opacity-[0.60]" style="font-family: 'Gilroy'; font-weight: 600;">Aloqaga chiqing</h4>
+                        </li>
+                        <li class="uk-flex uk-flex-center uk-flex-left@s">
+                            <a href="" class="link-hover text-[#1C314E] hover:text-[#fff] transition duration-100 uk-grid-small" uk-grid>
+                                <div>
+                                    <img src="../assets/images/svg/map-black.svg" alt="map">
+                                </div>
+                                <div>
+                                    <p class="text-lg text-[#1C34E] font-semibold">Estet klinikasini joylashuvi</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="uk-flex uk-flex-center uk-flex-left@s">
+                            <a href="" class="link-hover text-[#1C314E] hover:text-[#1C314E] transition duration-100 uk-grid-small" uk-grid>
+                                <div>
+                                    <img src="../assets/images/svg/call-black.svg" alt="map">
+                                </div>
+                                <div>
+                                    <p class="text-lg text-[#1C34E] font-semibold">Estet klinikasini joylashuvi</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="uk-flex uk-flex-center uk-flex-left@s">
+                            <a href="" class="link-hover text-[#1C314E] hover:text-[#1C314E] transition duration-100 uk-grid-small" uk-grid>
+                                <div>
+                                    <img src="../assets/images/svg/sms-black.svg" alt="map">
+                                </div>
+                                <div>
+                                    <p class="text-lg text-[#1C34E] font-semibold">Estet klinikasini joylashuvi</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="uk-container uk-container-large uk-padding">
+        
+        <div class="uk-flex-between uk-flex-middle uk-child-width-1-1 uk-child-width-auto@s uk-grid-small" uk-grid>
+            
+            <div>
+                <p class="text-[#1C314E] text-opacity-[.54] uk-text-center uk-tab-left@s">© 2021 Estet company</p>
+            </div>
+            
+            <div class="uk-flex uk-flex-center">
+                <a href="https://mount.uz/" class="link-hover">
+                    <img class="w-[80px]" src="../assets/images/svg/mount-logo.svg" alt="logo">
+                </a>
+            </div>
+            
+        </div>
+        
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit-icons.min.js"></script>
+
+<script src="../assets/js/main.js"></script>
+
+
+</body>
+</html>

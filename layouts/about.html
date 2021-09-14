@@ -1,678 +1,850 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tailwind css JIT</title>
-  <link rel="stylesheet" href="../assets/css/main.css">
-  <link rel="stylesheet" href="../assets/css/tailwind.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css" />
-  <!-- custom js -->
-  <script defer src="../assets/js/index.js"></script>
-  <!-- font link -->
-  <link rel="stylesheet" href="../assets/fonts/gilroy/stylesheet.css">
-  <style>
-    body {
-      font-family: 'Gilroy';
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ested</title>
+    <!-- tailwind config css -->
+    <link rel="stylesheet" href="../assets/css/tailwind.css"/>
+    <!-- custom scss -->
+    <link rel="stylesheet" href="../assets/scss/main.css">
+    <!-- uikit cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css" />
+    <!-- custom font -->
+    <link rel="stylesheet" href="../assets/css/font.css">
 </head>
 <body>
-  
-  <!-- header section start -->
-  <div id="header-container" class="z-50 uk-sticky uk-visible@m">       
-    <header class="header z-10 absolute top-0 w-full border-b py-4" uk-scrollspy="target: .animateText; cls: uk-animation-slide-left-small;delay: 300" style="border-color: #ffffff55;">
-      <div class="uk-container uk-container-large">
-        <nav class="uk-navbar" uk-navbar>
-          
-          <div class="uk-navbar-left">
-            <a href="" class="uk-navbar-item uk-logo p-0">
-              <img src="../assets/images/svg/navbar-logo.svg" alt="Navbar Logo Svg">
-            </a>
-          </div>
-          
-          <div class="uk-navbar-center">
-            <div class="">
-              <ul class="uk-flex-center uk-grid" uk-grid>
-                <li class="">
-                  <a class="nav-link" href="index.html">Bosh sahifa</a>
-                </li>
-                <li class="">
-                  <a class="nav-link" href="about.html">Biz haqimizda</a>
-                </li>
-                <li class="">
-                  <a class="nav-link" href="products.html">Mahsulotlarimiz</a>
-                </li>
-                <li class="">
-                  <a class="nav-link" href="galary.html">Galareya</a>
-                </li>
-                <li class="">
-                  <a class="nav-link" href="contacts.html">Kontaktlar</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          
-          <div class="uk-navbar-right">
-            <img class="mr-2" src="../assets/images/svg/Call.svg" alt="Navbar Call Svg">
-            <a href="" class="text-[#fff] hover:text-[#fff] hover:no-underline">97 304 04 40</a>
-          </div>
-          
-        </nav>
-      </div>
-    </header>
-  </div>
-  <!-- header section end -->
-  
-  <!-- main section start -->
-  <section class="main-section uk-section uk-section-large  w-full bg-no-repeat bg-cover uk-background-top-center relative " style="background-image: url('../assets/images/about-page/main-back.png');">
     
-    <div class="uk-container uk-container-large pt-28 pb-44 sm:pb-32 xl:pt-20 2xl:pt-44 2xl:pb-44 relative">
-      <div class="uk-grid uk-child-width-1-2@l z-10 relative" uk-grid>
-        <div class="main-content uk-text-center uk-text-left@s">
-          <h1 class="title-first text-[#fff] m-0 anim1 font-gilroy uk-scrollspy" uk-scrollspy="cls: uk-animation-slide-top-medium; delay: 300">
-            Kompaniyamiz haqida
-          </h1>
-          <div class="">
-            <p class="uk-width-auto uk-width-3-4@s text-[#ffffffdd] m-0 mt-6 anim1 uk-scrollspy" uk-scrollspy="cls: uk-animation-slide-top-medium; delay: 500">
-              It has survived not only five centuries, but also the leap into electronic typesetting, unchanged. It was popularised in the 1960s with the release of Letraset sheets containing passages, and more recently  
-            </p>
-          </div>
-          <div class="inline-block mt-10">
-            <a href="" class="flex items-center nav-item text-[#fff] hover:text-[#fff] hover:no-underline anim1 uk-scrollspy group" uk-scrollspy="cls: uk-animation-slide-top-medium; delay: 800">
-              Aloqaga chiqish
-              <img class="ml-2 group-hover:translate-x-[10px] transition duration-300" src="../assets/images/main-page/Arrow - Right.svg" alt="Right Svg">
-            </a>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-  <!-- main section end -->
-  
-  <!-- ABOUT US SECTION START-->
-  <section class="uk-section uk-overflow-hidden">
-    
-    <div class="uk-container uk-container-large">
-      
-      <div class="mb-16">
-        <h2 class="title-second transition duration-700 font-gilroy " uk-scrollspy="cls: uk-animation-slide-top; delay: 300">
-          Qisqacha <span class="text-[#0E518F]">biz haqimizda</span>
-        </h2>
-        <div class="mx-auto uk-width-1-2@m">
-          <p class="section-text transition duration-800" uk-scrollspy="cls: uk-animation-slide-bottom">
-            It was popularised in the 1960s with the release of Letraset
-            sheets containing passages, and more recently
-          </p>
-        </div>
-      </div>
-      
-      <div class="uk-grid uk-child-width-1-2@m uk-flex-middle uk-flex-center" uk-grid>
-        <div class="uk-padding-remove-left relative uk-visible@l">
-          <div class="uk-grid uk-grid-large" uk-grid>
-            <div class="uk-width-1-2" uk-parallax="y: 25; x: 25; easing: -2">
-              <div class="w-full h-full">
-                <img class="w-full h-full" src="../assets/images/main-page/about-5-clothes-img.png" alt="png img">
-              </div>
+    <div uk-sticky="animation: uk-animation-fade; sel-target: .header; cls-active: uk-navbar-sticky bg-[#fff]; cls-inactive: uk-navbar-transparent z-[9]; top: 200;">
+        <header class="header absolute top-0 left-0 w-full z-10 border-b border-[#fff] border-opacity-[0.10]" uk-scrollspy="target: .animateText; cls: uk-animation-slide-left-small;delay: 300">
+            <div class="uk-container uk-container-large">
+                <nav class="uk-flex-middle uk-flex-between uk-padding uk-padding-remove-horizontal" uk-grid>
+                    
+                    <ul class="uk-width-1-6@l uk-width-auto">
+                        <li class="logo-white">
+                            <a class="" href="index.html">
+                                <img class="uk-logo" src="../assets/images/svg/Estet.svg" alt="logo">
+                            </a>
+                        </li>
+                        <li class="logo-black">
+                            <a class="" href="index.html">
+                                <img class="uk-logo" src="../assets/images/svg/Estet-black.svg" alt="logo">
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                    <ul class="uk-visible@m uk-flex-between" uk-grid>
+                        
+                        <li class="uk-active animateText">
+                            <a class="relative nav-link navbar-active-link link-hover active text-[#fff] font-semibold" href="index.html">
+                                Bosh sahifa
+                            </a>
+                        </li>
+                        <li class="animateText">
+                            <a class="relative nav-link navbar-active-link link-hover text-[#fff] font-semibold" href="service.html">
+                                Hizmatlarimiz
+                            </a>
+                        </li>
+                        <li class="animateText">
+                            <a class="relative nav-link navbar-active-link link-hover text-[#fff] font-semibold" href="job.html">
+                                Ishlarimiz
+                            </a>
+                        </li>
+                        <li class="animateText">
+                            <a class="relative nav-link navbar-active-link link-hover text-[#fff] font-semibold" href="javascript:void(0);">
+                                Biz haqimizda
+                            </a>
+                        </li>
+                        <li class="animateText">
+                            <a class="relative nav-link navbar-active-link link-hover text-[#fff] font-semibold" href="contact.html">
+                                Kontaktlar
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <ul class="uk-visible@m flex justify-end uk-width-1-6 uk-padding-remove-left">
+                        <li>
+                            <a href="javascript:void(0);" class="nav-link font-semibold hover:text-[#fff] hover:no-underline text-[#fff] lang inline-flex items-center px-4 font-semibold" uk-scrollspy="cls: uk-animation-slide-right; delay: 200;" style="animation-duration: .8s">
+                                UZ
+                                <svg class="w-4 h-4 fill-current ml-1"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg>
+                            </a>
+                            <div class="uk-padding-remove rounded-[5px]" style="min-width: 100px;" uk-dropdown="pos: bottom-justify;animation: uk-animation-slide-top-small; duration: 400; mode: click">
+                                
+                                <ul class="uk-grid uk-grid-small uk-flex-middle uk-flex-column uk-padding-small" uk-grid >
+                                    <li class="uk-width-auto">
+                                        <a href="javascript:void(0);" class="link-hover text-[#1c314e] font-semibold">
+                                            RU
+                                        </a>
+                                    </li>
+                                    <li class="uk-width-auto">
+                                        <a href="javascript:void(0);" class="link-hover text-[#1c314e] font-semibold">
+                                            EN
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li uk-scrollspy="cls: uk-animation-slide-right; delay: 400;">
+                            <a class="nav-link font-semibold link-hover text-[#fff] flex items-center" href="tel:+998973040440" target="_blank">
+                                <img class="mr-[7px] nav-call-white" src="../assets/images/svg/call.svg" alt="call">
+                                <img class="mr-[7px] nav-call-black" src="../assets/images/svg/call-black.svg" alt="call">
+                                <span class="">
+                                    97 304 04 40
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="uk-hidden@m">
+                        <li>
+                            <a uk-toggle="target: #offcanvas-overlay" class="" href="javascript:void(0);">
+                                <img class="nav-menu-img-white" src="../assets/images/svg/hamburger.svg" alt="menu">
+                                <img class="nav-menu-img-black" src="../assets/images/svg/hambuerger-black.svg" alt="menu">
+                            </a>             
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            
-            <div class="uk-width-1-2 flex itemes-end translate-y-[20px]"  uk-parallax="y: 25; x: -25; easing: -2">
-              <div class="flex items-end uk-width-3-4">
-                <img src="../assets/images/main-page/about-5-cotton-img.png" alt="png img">
-              </div>
-            </div>
-            
-            <div class="uk-width-1-2 flex items-end justify-end"  uk-parallax="y: -25; x: 25; easing: -2">
-              <div class="flex items-end justify-end uk-width-3-4">
-                <img src="../assets/images/main-page/about-5-towel-img.png" alt="png img">
-              </div>
-            </div>
-            
-            <div class="uk-width-1-2 translate-y-[20px]"  uk-parallax="y: -25; x: -25; easing: -2">
-              <div>
-                <img src="../assets/images/main-page/about-5-factory-img.png" alt="png img">
-              </div>
-            </div>
-          </div>
-          
-          <div class="text-[#fff] w-[150px] h-[150px] flex items-center justify-center flex-col bg-[#0E518F] rounded-full text-center p-2 absolute top-1/2 translate-y-[-50%] left-1/2 translate-x-[-50%]">
-            <div class="flex items-center">
-              <h3 class="text-[#fff] m-0 text-[44px] font-bold">5</h3>
-              <span class="text-[44px] font-bold">+</span>
-            </div>
-            <div class="inline-block text-center flex justify-center w-full">
-              <p class="m-0 text-[12px]">Yil shu sohada faoliyat olib boramiz</p>
-            </div>
-          </div>
-        </div>
+        </header>
         
-        <!-- about photo content mobile start -->
-        <div class="pb-10 md:pb-0 relative uk-hidden@l uk-width-1-2@m uk-width-3-4@s">
-          <div class="uk-grid uk-grid-small" uk-grid>
-            <div class="uk-width-1-2">
-              <div class="w-full h-full">
-                <img class="w-full h-full" src="../assets/images/main-page/about-5-clothes-img.png" alt="png img">
-              </div>
-            </div>
-            
-            <div class="uk-width-1-2 flex itemes-end translate-y-[20px]">
-              <div class="flex items-end uk-width-3-4">
-                <img src="../assets/images/main-page/about-5-cotton-img.png" alt="png img">
-              </div>
-            </div>
-            
-            <div class="uk-width-1-2 flex items-end justify-end">
-              <div class="flex items-end justify-end uk-width-3-4">
-                <img src="../assets/images/main-page/about-5-towel-img.png" alt="png img">
-              </div>
-            </div>
-            
-            <div class="uk-width-1-2 translate-y-[20px]">
-              <div>
-                <img src="../assets/images/main-page/about-5-factory-img.png" alt="png img">
-              </div>
-            </div>
-          </div>
-          
-          <div class="text-[#fff] w-[100px] h-[100px] flex items-center justify-center flex-col bg-[#0E518F] rounded-full text-center p-2 absolute top-1/2 translate-y-[-50%] left-1/2 translate-x-[-50%]">
-            <div class="flex items-center">
-              <h3 class="text-[#fff] m-0 text-[30px] font-bold" data-count="5">5</h3>
-              <span class="text-[30px] font-bold">+</span>
-            </div>
-            <div class="inline-block text-center flex justify-center w-full">
-              <p class="m-0 text-[12px]">Yil tajribaz</p>
-            </div>
-          </div>
+        <div id="offcanvas-overlay" uk-offcanvas="flip: true; overlay: true">
+            <div class="uk-offcanvas-bar">
+                
+                <button class="uk-offcanvas-close" style="color: #fff;" type="button" uk-close></button>
+                
+                <ul class="uk-grid uk-grid-medium uk-flex-middle uk-flex-center uk-flex-column
+                uk-grid-column-collapse uk-margin-large-top"
+                uk-grid
+                >
+                <li>
+                    <a class="text-[#fff] link-hover link-hover font-semibold" href="index.html">
+                        Bosh sahifa
+                    </a>
+                </li>
+                <li>
+                    <a class="text-[#fff] link-hover link-hover  font-semibold" href="service.html">
+                        Hizmatlarimiz
+                    </a>
+                </li>
+                <li>
+                    <a class="text-[#fff] link-hover link-hover  font-semibold" href="job.html">
+                        Ishlarimiz
+                    </a>
+                </li>
+                <li>
+                    <a class="text-[#fff] link-hover link-hover  font-semibold" href="javascript:void(0);">
+                        Biz haqimizda
+                    </a>
+                </li>
+                <li>
+                    <a class="text-[#fff] link-hover link-hover  font-semibold" href="contact.html">
+                        Kontaktlar
+                    </a>
+                </li>
+            </ul>
         </div>
-        <!-- about photo content mobile end -->
+    </div>
+</div>
+
+<!-- about section start -->
+<section class="uk-section uk-margin-bottom uk-margin-large-top" uk-scrollspy="target: .animateText; cls: uk-animation-slide-left-medium;delay: 300">
+    
+    <div class="uk-grid-large uk-child-width-1-1 uk-margin-large-top" uk-grid>
         
         <div>
-          <div class="uk-text-center uk-text-left@s">
-            <h1 class="title-first m-0 font-gilroy" uk-scrollspy="cls: uk-animation-slide-right; delay: 300">
-              <span class="text-[#0E518F]">Zemingroup</span> companiyasi textil sohasida <span class="text-[#03518f]">2014</span> yildan
-              beri ishlaydi.
-            </h1>
-            <div>
-              <p class="text-[#111] m-0 mt-6" uk-scrollspy="cls: uk-animation-slide-left; delay: 300">
-                It was popularised in the 1960s with the release of Letraset sheets containing
-                passages, and more recently It was popularised in the 1960s with the release
-                of Letrasetsheets bana sana bishey olabilir 
-              </p>
+            <div class="uk-container uk-container-large">
+                
+                <div class="uk-grid-small uk-child-width-1-1" uk-grid>
+                    
+                    <div>
+                        <div class="uk-grid-small uk-child-width-1-1 uk-text-center uk-text-left@s" uk-grid>
+                            <div class="uk-visible@s animateText">
+                                <div class="uk-display-inline-block">
+                                    <a href="" class="link-hover text-[#1C314E] line-animation-black flex items-center">
+                                        <img class="uk-display-inline-block mr-2" src="../assets/images/svg/arrow-left-black.svg" style="transform: rotate(180deg);" alt="arrow">
+                                        <p class="text-[#1C314E] text-xl uk-display-inline-block font-medium m-0">Orqaga</p>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="animateText">
+                                <div>
+                                    <h1 class="heading-main text-[#1C314E] sm:border-none pb-3 sm:pb-0 border-b-2 border-[#1c314e] border-opacity-[0.20] uk-display-inline-block">Biz haqimizda</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
-            <div class="mt-10 inline-block" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500">
-              <a href="" class="main-btn flex items-center hover:text-[#fff] hover:no-underline bg-[#03518f]">
-                <p class="m-0 text-[#fff] mr-2">Mahsulotlarimizimg</p>
-                <img src="../assets/images/main-page/Arrow - Right.svg" alt="svg img">
-              </a>
+        </div>
+        
+        <div class="border-t-4 border-[#1C314E] border-opacity-[.12]"></div>
+        
+        <div>
+            <div class="uk-container uk-container-large">
+                
+                <div class="uk-child-width-1-1" uk-grid>
+                    
+                    <div>
+                        <div class="uk-grid-large uk-flex-center uk-flex-middle" uk-grid>
+                            
+                            <div class="uk-width-1-3@l uk-width-1-2@s animateText rotate-12">
+                                <div class="w-full h-full bg-[#1C314E] bg-opacity-[.12] rounded-[12px]">
+                                    <div>
+                                        <img class="w-full h-full object-cover -rotate-12 rounded-[12px]" src="../assets/images/about/about-1.png" alt="about">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="uk-width-1-2@l uk-width-1-2@s animateText">
+                                <div class="uk-grid-small uk-child-width-1-1" uk-grid>
+                                    
+                                    <div>
+                                        <div class="uk-grid-small uk-flex-middle uk-flex-between" uk-grid>
+                                            <h3 class="heading-section text-[#1C314E] text-opacity-[0.42]">01</h3>
+                                            
+                                            <div class="uk-width-expand">
+                                                <h2 class="heading-section-smallest sm:heading-section text-[#1C314E]">Ested klinikasi haqida</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <p class="p-section">
+                                            Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san
+                                            seeev diye yinemi sevayim Biznesini endigina boshlagan, boshqaruv va
+                                            sotuv bilan muammo larga duch kelayotgan barcha yosh tadbirkorlar
+                                            uchun ushbu kurs juda foydali bo‘ladi
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="uk-grid-large uk-flex-center uk-flex-middle uk-flex-row-reverse" uk-grid>
+                            
+                            <div class="uk-width-1-3@l uk-width-1-2@s animateText rotate-12">
+                                <div class="w-full h-full bg-[#1C314E] bg-opacity-[.12] rounded-[12px]">
+                                    <div>
+                                        <img class="w-full h-full object-cover -rotate-12 rounded-[12px]" src="../assets/images/about/about-1.png" alt="about">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="uk-width-1-2@l uk-width-1-2@s animateText">
+                                <div class="uk-grid-small uk-child-width-1-1" uk-grid>
+                                    
+                                    <div>
+                                        <div class="uk-grid-small uk-flex-middle uk-flex-between" uk-grid>
+                                            <h3 class="heading-section text-[#1C314E] text-opacity-[0.42]">02</h3>
+                                            
+                                            <div class="uk-width-expand">
+                                                <h2 class="heading-section-smallest sm:heading-section text-[#1C314E]">Ested klinikasi haqida</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <p class="p-section">
+                                            Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san
+                                            seeev diye yinemi sevayim Biznesini endigina boshlagan, boshqaruv va
+                                            sotuv bilan muammo larga duch kelayotgan barcha yosh tadbirkorlar
+                                            uchun ushbu kurs juda foydali bo‘ladi
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="uk-grid-large uk-flex-center uk-flex-middle" uk-grid>
+                            
+                            <div class="uk-width-1-3@l uk-width-1-2@s animateText rotate-12">
+                                <div class="w-full h-full bg-[#1C314E] bg-opacity-[.12] rounded-[12px]">
+                                    <div>
+                                        <img class="w-full h-full object-cover -rotate-12 rounded-[12px]" src="../assets/images/about/about-1.png" alt="about">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="uk-width-1-2@l uk-width-1-2@s animateText">
+                                <div class="uk-grid-small uk-child-width-1-1" uk-grid>
+                                    
+                                    <div>
+                                        <div class="uk-grid-small uk-flex-middle uk-flex-between" uk-grid>
+                                            <h3 class="heading-section text-[#1C314E] text-opacity-[0.42]">03</h3>
+                                            
+                                            <div class="uk-width-expand">
+                                                <h2 class="heading-section-smallest sm:heading-section text-[#1C314E]">Ested klinikasi haqida</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <p class="p-section">
+                                            Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san
+                                            seeev diye yinemi sevayim Biznesini endigina boshlagan, boshqaruv va
+                                            sotuv bilan muammo larga duch kelayotgan barcha yosh tadbirkorlar
+                                            uchun ushbu kurs juda foydali bo‘ladi
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="uk-grid-large uk-flex-center uk-flex-middle uk-flex-row-reverse" uk-grid>
+                            
+                            <div class="uk-width-1-3@l uk-width-1-2@s animateText rotate-12">
+                                <div class="w-full h-full bg-[#1C314E] bg-opacity-[.12] rounded-[12px]">
+                                    <div>
+                                        <img class="w-full h-full object-cover -rotate-12 rounded-[12px]" src="../assets/images/about/about-1.png" alt="about">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="uk-width-1-2@l uk-width-1-2@s animateText">
+                                <div class="uk-grid-small uk-child-width-1-1" uk-grid>
+                                    
+                                    <div>
+                                        <div class="uk-grid-small uk-flex-middle uk-flex-between" uk-grid>
+                                            <h3 class="heading-section text-[#1C314E] text-opacity-[0.42]">04</h3>
+                                            
+                                            <div class="uk-width-expand">
+                                                <h2 class="heading-section-smallest sm:heading-section text-[#1C314E]">Ested klinikasi haqida</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <p class="p-section">
+                                            Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san
+                                            seeev diye yinemi sevayim Biznesini endigina boshlagan, boshqaruv va
+                                            sotuv bilan muammo larga duch kelayotgan barcha yosh tadbirkorlar
+                                            uchun ushbu kurs juda foydali bo‘ladi
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </section>
-  <!-- ABOUT US SECTION END -->
+    
+</section>
+<!-- about section end -->
 
-  <!-- products section start -->
-<setion class="uk-section uk-overflow-hidden">
-  <div class="uk-container uk-container-large">
-      
-      <div>
-          <div class="flex items-center flex-col relative">
-              <div class="section-line uk-visible@s"></div>
-              <h2 class="title-second uk-visible@s font-gilroy " uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true">
-                Biz qanday <span class="text-[#0E518F]">mahsulot</span> ishlab chiqaramiz?
-              </h2>
-              <h2 class="title-second uk-hidden@s font-gilroy " uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true">
-                  <span class="text-[#0E518F]">Mahsulotlarimiz</span>
-              </h2>
-          </div>
-          <div class="mx-auto w-1/2 uk-width-1-3@m" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true">
-              <p class="section-text">
-                  It was popularised in the 1960s with the release of Letraset
-                  sheets containing passages, and more recently
-              </p>
-          </div>
-      </div>
-      
-      
-      <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid uk-grid-medium uk-grid-match" uk-grid>
-          <div>
-              <div class="uk-card flex flex-col justify-between">
-                  <div class="uk-card-media-top">
-                      <img class="w-full" src="../assets/images/main-page/prima-cotton-img.png" alt="png img" uk-scrollspy="cls: uk-animation-slide-left; repeat: true; delay: 300" style="animation-duration: 1s;">
-                  </div>
-                  <div class="">
-                      <div class="uk-grid uk-grid-small uk-flex-center text-center" uk-grid>
-                          <h3 class="text-[30px] font-bold text-center" style="font-family: 'Gilroy';" uk-scrollspy="cls: uk-animation-slide-left; delay: 300; repeat: true">Prima paxta</h3>
-                          <div>
-                              <p class="font-medium" uk-scrollspy="cls: uk-animation-slide-top; delay: 300; repeat: true">
-                                  Before you start writing, you should be clear about the purpose of your site. Who is it aimed at? What are your customers' motivations and expectations when
-                              </p>
-                          </div>
-                          <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; repeat: true">
-                              <a href="" class="uk-grid uk-grid-small hover:primary-color-text hover:no-underline font-semibold group" uk-grid>
-                                  <p class="primary-color-text">
-                                      To'liq malumot
-                                  </p>
-                                  <img class="group-hover:translate-x-[20px] transition duration-300" src="../assets/images/main-page/arrow-blue-right.svg" alt="svg img">
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          
-          <div>
-              <div class="uk-card flex flex-col justify-between">
-                  <div class="uk-card-media-top">
-                      <img class="w-full" src="../assets/images/main-page/maxroviy-towel-img.png" alt="png img" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true; delay: 100" style="animation-duration: 1s;">
-                  </div>
-                  <div class="">
-                      <div class="uk-grid uk-grid-small uk-flex-center text-center" uk-grid>
-                          <h3 class="text-[30px] font-bold text-center" style="font-family: 'Gilroy';" uk-scrollspy="cls: uk-animation-slide-top; delay: 300; repeat: true">Prima paxta</h3>
-                          <div>
-                              <p class="font-medium" uk-scrollspy="cls: uk-animation-slide-top; delay: 500; repeat: true">
-                                  Before you start writing, you should be clear about the purpose of your site. Who is it aimed at? What are your customers' motivations and expectations when
-                              </p>
-                          </div>
-                          <div uk-scrollspy="cls: uk-animation-slide-top; delay: 800; repeat: true">
-                              <a href="" class="uk-grid uk-grid-small hover:primary-color-text hover:no-underline font-semibold group" uk-grid>
-                                  <p class="primary-color-text">
-                                      To'liq malumot
-                                  </p>
-                                  <img class="group-hover:translate-x-[20px] transition duration-300" src="../assets/images/main-page/arrow-blue-right.svg" alt="svg img">
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          
-          <div>
-              <div class="uk-card flex flex-col justify-between">
-                  <div class="uk-card-media-top">
-                      <img class="w-full" src="../assets/images/main-page/totiqma-cloth-img.png" alt="png img" uk-scrollspy="cls: uk-animation-slide-right; repeat: true; delay: 300" style="animation-duration: 1s;">
-                  </div>
-                  <div class="">
-                      <div class="uk-grid uk-grid-small uk-flex-center text-center" uk-grid>
-                          <h3 class="text-[30px] font-bold text-center" style="font-family: 'Gilroy';" uk-scrollspy="cls: uk-animation-slide-right; delay: 300; repeat: true">Prima paxta</h3>
-                          <div>
-                              <p class="font-medium" uk-scrollspy="cls: uk-animation-slide-top; delay: 300; repeat: true">
-                                  Before you start writing, you should be clear about the purpose of your site. Who is it aimed at? What are your customers' motivations and expectations when
-                              </p>
-                          </div>
-                          <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; repeat: true">
-                              <a href="" class="uk-grid uk-grid-small hover:primary-color-text hover:no-underline font-semibold group" uk-grid>
-                                  <p class="primary-color-text">
-                                      To'liq malumot
-                                  </p>
-                                  <img class="group-hover:translate-x-[20px] transition duration-300" src="../assets/images/main-page/arrow-blue-right.svg" alt="svg img">
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      
-  </div>
-</div>
 
-</div>
-</setion>
-<!-- prpducts section end -->
-  
-  <!-- PARTNERS SECTION START -->
-  <section class="uk-section uk-padding-remove-bottom uk-overflow-hidden">
-    
-    <div class="transition duration-700" uk-scrollspy="cls: uk-animation-slide-right; target: .partners-heading; delay: 300; repeat: true">
-      <div class="flex items-center flex-col relative">
-        <div class="section-line uk-visible@s"></div>
-        <h2 class="uk-visible@s title-second partners-heading font-gilroy ">
-          Bizning <span class="text-[#0E518F]">hamkorlarimiz</span>
-        </h2>
-        <h2 class="uk-hidden@s title-second partners-heading font-gilroy ">
-          Hamkorlarimiz
-        </h2>
-      </div>
-      <div class="mx-auto w-1/2 uk-width-1-3@m">
-        <p class="section-text transition duration-700"  uk-scrollspy="cls: uk-animation-slide-left">
-          It was popularised in the 1960s with the release of Letraset
-          sheets containing passages, and more recently
-        </p>
-      </div>
-    </div>
-    
-    <div class="uk-container uk-contaier-large py-10">
-      <div class="uk-width-3-4 mx-auto">
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-          <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-5@m uk-grid" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom; target: .partner-anim; delay: 300; repeat: true">
-            <li class="partner-anim flex items-center overflow-hidden">
-              <a href="">
-                <img class="transition duration-500 hover:scale-95" src="../assets/images/main-page/adidas-svg-img.svg" alt="svg img">
-              </a>
-            </li>
-            <li class="partner-anim flex items-center overflow-hidden" uk-scrollspy-class="uk-animation-slide-top">
-              <a href="">
-                <img class="transition duration-500 hover:scale-95" src="../assets/images/main-page/gap-svg-img.svg" alt="svg img">
-              </a>
-            </li>
-            <li class="partner-anim flex items-center overflow-hidden">
-              <a href="">
-                <img class="transition duration-500 hover:scale-95" src="../assets/images/main-page/nestle-svg-img.svg" alt="svg img">
-              </a>
-            </li>
-            <li class="partner-anim flex items-center overflow-hidden" uk-scrollspy-class="uk-animation-slide-top">
-              <a href="">
-                <img class="transition duration-500 hover:scale-95" src="../assets/images/main-page/allianz-svg-img.svg" alt="svg img">
-              </a>
-            </li>
-            <li class="partner-anim flex items-center overflow-hidden">
-              <a href="">
-                <img class="transition duration-500 hover:scale-95" src="../assets/images/main-page/visa-svg-img.svg" alt="svg img">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    
-  </section>
-  <!-- PARTNERS SECTION END -->
-  
-  <!-- OUR WINS SECTION START -->
-  <section class="uk-section uk-overflow-hidden">
-    <div class="transition duration-700" uk-scrollspy="cls: uk-animation-slide-right; target: .partners-heading; delay: 300; repeat: true">
-      <div class="flex items-center flex-col relative">
-        <div class="section-line uk-visible@s"></div>
-        <h2 class="uk-visible@s title-second partners-heading font-gilroy ">
-          Bizning <span class="text-[#0E518F]">Yutuqlarimiz</span>
-        </h2>
-        <h2 class="uk-hidden@s title-second partners-heading font-gilroy ">
-          Yutuqlarimiz
-        </h2>
-      </div>
-      <div class="mx-auto w-1/2 uk-width-1-3@m">
-        <p class="section-text transition duration-700"  uk-scrollspy="cls: uk-animation-slide-left">
-          It was popularised in the 1960s with the release of Letraset
-          sheets containing passages, and more recently
-        </p>
-      </div>
-    </div>
+<!-- doctors section start -->
+<section class="uk-section doctor-section" uk-scrollspy="target: .animateText; cls: uk-animation-slide-left-medium;delay: 300">
     
     <div class="uk-container uk-container-large">
-      
-      <div class="mt-10">
-        <div class="uk-grid uk-child-width-1-2@m uk-flex-middle uk-flex-center uk-flex-wrap-reverse" uk-grid>
-          <div>
-            <div class="uk-text-center uk-text-left@s uk-width-expand">
-              <h1 class="title-first m-0 font-gilroy " uk-scrollspy="cls: uk-animation-slide-left; delay: 300">
-                <span class="text-[#0E518F]">2018 yil</span> raxbarimiz Alisher
-                Umarchaev <span class="text-[#03518f]">Shavkat Mirziyoyev </span> tomonidan taqdirlandi
-              </h1>
-              <div>
-                <p class="text-[#111] m-0 mt-6" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">
-                  It was popularised in the 1960s with the release of Letraset sheets containing
-                  passages, and more recently It was popularised in the 1960s with the release
-                  of Letrasetsheets bana sana bishey olabilir 
-                </p>
-              </div>
-              <div class="mt-10 inline-block" uk-scrollspy="cls: uk-animation-slide-top; delay: 500">
-                <a href="" class="main-btn flex items-center hover:text-[#fff] hover:no-underline bg-[#03518f]">
-                  <p class="m-0 text-[#fff] mr-2">Mahsulotlarimizimg</p>
-                  <img src="../assets/images/main-page/Arrow - Right.svg" alt="svg img">
+        <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider="center: true; finite: true">
+            
+            <ul class="uk-slider-items uk-grid relative uk-margin-large-top">
+                <li class="uk-width-1-1">
+                    <div class="uk-grid-large uk-flex-middle uk-flex-center" uk-grid>
+                        
+                        <div class="uk-hidden@s uk-text-center animateText">
+                            <div>
+                                <div>
+                                    <h2 class="text-[30px] tracking-wide mb-2" style="font-family: 'Gilroy'; font-weight: 700; color: #1c314e;">Bizning malakali shifokorlarimiz</h2>
+                                </div>
+                                <div>
+                                    <p class="p-section">Barcha shifokorlarimiz dunyo standartlariga javob beradi</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="uk-width-1-3@m uk-width-1-2@s uk-width-3-4 animateText">
+                            <div class="w-full h-full bg-[#1C314E] bg-opacity-[.12] translate-x-[-60px] translate-y-[-50px] rounded-[12px]">
+                                <div>
+                                    <img class="w-full h-full object-cover translate-x-[60px] translate-y-[50px] rounded-[12px]" src="../assets/images/about/doctor-1.png" alt="doctor">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="uk-width-1-2@s uk-text-center uk-text-left@s animateText">
+                            <div class="uk-child-width-1-1 uk-grid-small" uk-grid>
+                                <div class="uk-visible@s">
+                                    <div>
+                                        <div>
+                                            <h2 class="text-[30px] tracking-wide mb-2" style="font-family: 'Gilroy'; font-weight: 700; color: #1c314e;">Bizning malakali shifokorlarimiz</h2>
+                                        </div>
+                                        <div>
+                                            <p class="p-section">Barcha shifokorlarimiz dunyo standartlariga javob beradi</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <div>
+                                        <h1 class="heading-section-small mb-2" style="color: #1c314e;">Amirkhon Saidov</h1>
+                                        <div>
+                                            <p class="p-section">Doktorning lavozimi</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <p class="p-section">
+                                        Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san
+                                        seeev diye yinemi sevayim Biznesini endigina boshlagan, boshqaruv va
+                                        sotuv bilan muammo larga duch kelayotgan barcha 
+                                    </p>
+                                </div>
+                                
+                                <div class="uk-flex uk-flex-center uk-flex-left@s">
+                                    <ul class="uk-navbar-nav uk-flex uk-flex-middle">
+                                        <li>
+                                            <a href="" class="link-hover uk-padding-remove-left">
+                                                <img class="w-full h-full object-cover hover:scale-110 duration-300" src="../assets/images/svg/instagram.svg" alt="instagram">
+                                            </a>
+                                        </li>
+                                        <hr class="border-none bg-[#1C314E] bg-opacity-[0.12] w-[1px] h-[18px] m-0">
+                                        <li>
+                                            <a href="" class="link-hover">
+                                                <img class="w-full h-full object-cover hover:scale-110 duration-300" src="../assets/images/svg/instagram.svg" alt="instagram">
+                                            </a>
+                                        </li>
+                                        <hr class="border-none bg-[#1C314E] bg-opacity-[0.12] w-[1px] h-[18px] m-0">
+                                        <li>
+                                            <a href="" class="link-hover">
+                                                <img class="w-full h-full object-cover hover:scale-110 duration-300" src="../assets/images/svg/instagram.svg" alt="instagram">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="uk-width-1-1">
+                    <div class="uk-grid-large uk-flex-middle uk-flex-center" uk-grid>
+                        
+                        <div class="uk-hidden@s uk-text-center animateText">
+                            <div>
+                                <div>
+                                    <h2 class="text-[30px] tracking-wide mb-2" style="font-family: 'Gilroy'; font-weight: 700; color: #1c314e;">Bizning malakali shifokorlarimiz</h2>
+                                </div>
+                                <div>
+                                    <p class="p-section">Barcha shifokorlarimiz dunyo standartlariga javob beradi</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="uk-width-1-3@m uk-width-1-2@s uk-width-3-4 animateText">
+                            <div class="w-full h-full bg-[#1C314E] bg-opacity-[.12] translate-x-[-60px] translate-y-[-50px] rounded-[12px]">
+                                <div>
+                                    <img class="w-full h-full object-cover translate-x-[60px] translate-y-[50px] rounded-[12px]" src="../assets/images/about/doctor-1.png" alt="doctor">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="uk-width-1-2@s uk-text-center uk-text-left@s animateText">
+                            <div class="uk-child-width-1-1 uk-grid-small" uk-grid>
+                                <div class="uk-visible@s">
+                                    <div>
+                                        <div>
+                                            <h2 class="text-[30px] tracking-wide mb-2" style="font-family: 'Gilroy'; font-weight: 700; color: #1c314e;">Bizning malakali shifokorlarimiz</h2>
+                                        </div>
+                                        <div>
+                                            <p class="p-section">Barcha shifokorlarimiz dunyo standartlariga javob beradi</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <div>
+                                        <h1 class="heading-section-small mb-2" style="color: #1c314e;">Amirkhon Saidov</h1>
+                                        <div>
+                                            <p class="p-section">Doktorning lavozimi</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <p class="p-section">
+                                        Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san
+                                        seeev diye yinemi sevayim Biznesini endigina boshlagan, boshqaruv va
+                                        sotuv bilan muammo larga duch kelayotgan barcha 
+                                    </p>
+                                </div>
+                                
+                                <div class="uk-flex uk-flex-center uk-flex-left@s">
+                                    <ul class="uk-navbar-nav uk-flex uk-flex-middle">
+                                        <li>
+                                            <a href="" class="link-hover uk-padding-remove-left">
+                                                <img class="w-full h-full object-cover hover:scale-110 duration-300" src="../assets/images/svg/instagram.svg" alt="instagram">
+                                            </a>
+                                        </li>
+                                        <hr class="border-none bg-[#1C314E] bg-opacity-[0.12] w-[1px] h-[18px] m-0">
+                                        <li>
+                                            <a href="" class="link-hover">
+                                                <img class="w-full h-full object-cover hover:scale-110 duration-300" src="../assets/images/svg/instagram.svg" alt="instagram">
+                                            </a>
+                                        </li>
+                                        <hr class="border-none bg-[#1C314E] bg-opacity-[0.12] w-[1px] h-[18px] m-0">
+                                        <li>
+                                            <a href="" class="link-hover">
+                                                <img class="w-full h-full object-cover hover:scale-110 duration-300" src="../assets/images/svg/instagram.svg" alt="instagram">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="uk-width-1-1">
+                    <div class="uk-grid-large uk-flex-middle uk-flex-center" uk-grid>
+                        
+                        <div class="uk-hidden@s uk-text-center animateText">
+                            <div>
+                                <div>
+                                    <h2 class="text-[30px] tracking-wide mb-2" style="font-family: 'Gilroy'; font-weight: 700; color: #1c314e;">Bizning malakali shifokorlarimiz</h2>
+                                </div>
+                                <div>
+                                    <p class="p-section">Barcha shifokorlarimiz dunyo standartlariga javob beradi</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="uk-width-1-3@m uk-width-1-2@s uk-width-3-4 animateText">
+                            <div class="w-full h-full bg-[#1C314E] bg-opacity-[.12] translate-x-[-60px] translate-y-[-50px] rounded-[12px]">
+                                <div>
+                                    <img class="w-full h-full object-cover translate-x-[60px] translate-y-[50px] rounded-[12px]" src="../assets/images/about/doctor-1.png" alt="doctor">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="uk-width-1-2@s uk-text-center uk-text-left@s animateText">
+                            <div class="uk-child-width-1-1 uk-grid-small" uk-grid>
+                                <div class="uk-visible@s">
+                                    <div>
+                                        <div>
+                                            <h2 class="text-[30px] tracking-wide mb-2" style="font-family: 'Gilroy'; font-weight: 700; color: #1c314e;">Bizning malakali shifokorlarimiz</h2>
+                                        </div>
+                                        <div>
+                                            <p class="p-section">Barcha shifokorlarimiz dunyo standartlariga javob beradi</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <div>
+                                        <h1 class="heading-section-small mb-2" style="color: #1c314e;">Amirkhon Saidov</h1>
+                                        <div>
+                                            <p class="p-section">Doktorning lavozimi</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <p class="p-section">
+                                        Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san
+                                        seeev diye yinemi sevayim Biznesini endigina boshlagan, boshqaruv va
+                                        sotuv bilan muammo larga duch kelayotgan barcha 
+                                    </p>
+                                </div>
+                                
+                                <div class="uk-flex uk-flex-center uk-flex-left@s">
+                                    <ul class="uk-navbar-nav uk-flex uk-flex-middle">
+                                        <li>
+                                            <a href="" class="link-hover uk-padding-remove-left">
+                                                <img class="w-full h-full object-cover hover:scale-110 duration-300" src="../assets/images/svg/instagram.svg" alt="instagram">
+                                            </a>
+                                        </li>
+                                        <hr class="border-none bg-[#1C314E] bg-opacity-[0.12] w-[1px] h-[18px] m-0">
+                                        <li>
+                                            <a href="" class="link-hover">
+                                                <img class="w-full h-full object-cover hover:scale-110 duration-300" src="../assets/images/svg/instagram.svg" alt="instagram">
+                                            </a>
+                                        </li>
+                                        <hr class="border-none bg-[#1C314E] bg-opacity-[0.12] w-[1px] h-[18px] m-0">
+                                        <li>
+                                            <a href="" class="link-hover">
+                                                <img class="w-full h-full object-cover hover:scale-110 duration-300" src="../assets/images/svg/instagram.svg" alt="instagram">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+            
+            
+            <div class="absolute doctor-slider-next animateText">
+                <a href="javascirpt:void(0);" uk-slider-item="next">
+                    <img src="../assets/images/svg/arrow-left-black.svg" alt="arrow">
                 </a>
-              </div>
             </div>
-          </div>
-          
-          <div class="uk-width-3-4@s uk-width-1-2@m">
-            <div>
-              <img src="../assets/images/about-page/wins-medal-img.png" alt="png img" uk-scrollspy="cls: uk-animation-slide-right; repeat: true; delay: 300" style="animation-duration: 1s;">
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="mt-10">
-        <div class="uk-grid uk-child-width-1-2@m uk-flex-middle uk-flex-center" uk-grid>
-          <div class="uk-width-3-4@s uk-width-1-2@m">
-            <div>
-              <img src="../assets/images/about-page/wins-sertificate-img.png" alt="png img" uk-scrollspy="cls: uk-animation-slide-left; repeat: true; delay: 300" style="animation-duration: 1s;">
-            </div>
-          </div>
-          
-          <div>
-            <div class="uk-text-center uk-text-left@s uk-width-expand">
-              <h1 class="title-first m-0 font-gilroy " uk-scrollspy="cls: uk-animation-slide-right; delay: 300">
-                <span class="text-[#0E518F]">2018 yil</span> raxbarimiz Alisher
-                Umarchaev <span class="text-[#03518f]">Shavkat Mirziyoyev </span> tomonidan taqdirlandi
-              </h1>
-              <div>
-                <p class="text-[#111] m-0 mt-6" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">
-                  It was popularised in the 1960s with the release of Letraset sheets containing
-                  passages, and more recently It was popularised in the 1960s with the release
-                  of Letrasetsheets bana sana bishey olabilir 
-                </p>
-              </div>
-              <div class="mt-10 inline-block" uk-scrollspy="cls: uk-animation-slide-top; delay: 500">
-                <a href="" class="main-btn flex items-center hover:text-[#fff] hover:no-underline bg-[#03518f]">
-                  <p class="m-0 text-[#fff] mr-2">Mahsulotlarimizimg</p>
-                  <img src="../assets/images/main-page/Arrow - Right.svg" alt="svg img">
+            
+            <div class="absolute doctor-slider-previous animateText">
+                <a href="javascirpt:void(0);" uk-slider-item="previous">
+                    <img style="transform: rotate(180deg);" src="../assets/images/svg/arrow-left-black.svg" alt="arrow">
                 </a>
-              </div>
             </div>
-          </div>
+            
         </div>
-      </div>
     </div>
     
-  </div>
 </section>
-<!-- OUR WINS SECTION END -->
+<!-- doctors section end -->
 
-<!-- footer section start -->
-<footer class="uk-section primary-color-bg">
-  <div class="uk-container uk-container-large">
-      
-      <div class="uk-visible">
-          <div class="uk-grid uk-child-width-1-1" uk-grid>
-              
-              <div class="uk-hidden@s">
-                  <div class="">
-                      <a href="">
-                          <img class="mx-auto" src="../assets/images/svg/navbar-logo.svg" alt="Logo img">
-                      </a>
-                  </div>
-              </div>
-              
-              <div>
-                  <div class="uk-grid uk-child-width-1-1 uk-child-width-expand@s uk-flex-center uk-flex-between@s uk-flex-middle" uk-grid>
-                      <div class="">
-                          <ul class="uk-grid uk-flex-between@m uk-child-width-1-1 uk-child-width-auto@m uk-text-center uk-text-left@s" uk-grid>
-                              <li class="uk-visible@s">
-                                  <a href="" class="text-white def-hover-none flex items-center">
-                                      <p class="m-0">UZ</p>
-                                      <img class="ml-2" src="../assets/images/main-page/arrow-down.svg" alt="svg img">
-                                  </a>
-                                  <div uk-dropdown="mode: click; animation: uk-animation-slide-top-small; duration: 500" class="uk-padding-remove-bottom rounded-[10px]">
-                                      <ul class="uk-flex uk-flex-middle uk-flex-center uk-padding-remove">
-                                          <li>
-                                              <a class="font-bold text-[#111] hover:text-[#111]" href="" style="color: #111;">
-                                                  UZ
-                                              </a>
-                                          </li>
-                                          
-                                          <hr class="bg-[#111] text-[#111] h-[10px] w-[1px] opacity-[.72] mx-4">
-                                          <li>                       
-                                              <a href="" style="color: #111;">
-                                                  РУ
-                                              </a>
-                                          </li>
-                                          <hr class="bg-[#111] text-[#111] h-[10px] w-[1px] opacity-[.72] mx-4">
-                                          <li>
-                                              <a href="" style="color: #111;">
-                                                  EN
-                                              </a>
-                                          </li>
-                                      </ul>
-                                  </div>
-                              </li>
-                              <li>
-                                  <a href="index.html" class="text-white def-hover-none nav-item">Bosh sahifa</a>
-                              </li>
-                              <li>
-                                  <a href="about.html" class="text-white def-hover-none nav-item">Biz haqimizda</a>
-                              </li>
-                          </ul>
-                      </div>
-                      
-                      <div class="flex justify-center uk-width-auto uk-width-expand@l uk-visible@s">
-                          <div class="">
-                              <a href="">
-                                  <img class="" src="../assets/images/svg/navbar-logo.svg" alt="Logo img" >
-                              </a>
-                          </div>
-                      </div>
-                      
-                      <div class="">
-                          <ul class="uk-grid uk-flex-between@m uk-text-right@s uk-text-center uk-child-width-1-1 uk-child-width-auto@m" uk-grid>
-                              <li>
-                                  <a href="products.html" class="text-white def-hover-none nav-item">Mahsulotlarimiz</a>
-                              </li>
-                              <li>
-                                  <a href="gallery.html" class="text-white def-hover-none nav-item">Galareya</a>
-                              </li>
-                              <li>
-                                  <a href="contact.html" class="text-white def-hover-none nav-item">Kontaktlar</a>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-              
-              <div class="text-[#fff]">
-                  <div class="uk-grid uk-flex-between uk-flex-middle uk-child-width-1-1 uk-child-width-1-3@s" uk-grid>
-                      
-                      <div class="uk-width-expand uk-hidden@s">
-                          <div>
-                              <h1 class="text-[34px] md:text-[40px] bg-transparent text-white font-bold text-center m-0 font-gilroy ">
-                                  Tabiiylik va sifat belgisi
-                              </h1>
-                          </div>
-                      </div>
-                      
-                      <div>
-                          <ul class="uk-grid uk-grid-small uk-flex-column uk-text-center uk-text-left@s" uk-grid>
-                              <li class="uk-visible@s">
-                                  <h3 class="text-[#ffffff42] text-lg">Kontaklar</h3>
-                              </li>
-                              <li>
-                                  <div>
-                                      <a href="" class="text-white def-hover-none nav-item">zemingroup@gmail.com</a>
-                                  </div>
-                              </li>
-                              <li>
-                                  <div>
-                                      <a href="" class="text-white def-hover-none nav-item">+998 97 304 44 00.com</a>
-                                  </div>
-                              </li>
-                              <li>
-                                  <div>
-                                      <a href="" class="text-white def-hover-none nav-item">Zemingroup kompaniyasining</a>
-                                  </div>
-                              </li> 
-                          </ul>
-                      </div>
-                      
-                      <div class="uk-width-expand uk-visible@s">
-                          <div>
-                              <h1 class="text-[34px] md:text-[40px] bg-transparent text-white font-bold text-center font-gilroy">
-                                  Tabiiylik va sifat belgisi
-                              </h1>
-                          </div>
-                      </div>
-                      
-                      
-                      <div class="uk-visible@s">
-                          <ul class="uk-grid uk-grid-small uk-flex-column uk-text-right" uk-grid>
-                              <li>
-                                  <h3 class="text-[#ffffff42] text-lg">Mahsulot</h3>
-                              </li>
-                              <li>
-                                  <div>
-                                      <a href="" class="text-white def-hover-none nav-item">Prima paxta</a>
-                                  </div>
-                              </li>
-                              <li>
-                                  <div>
-                                      <a href="" class="text-white def-hover-none nav-item">Махровый полотенце</a>
-                                  </div>
-                              </li>
-                              <li>
-                                  <div>
-                                      <a href="" class="text-white def-hover-none nav-item">Noto‘qima mato</a>
-                                  </div>
-                              </li> 
-                          </ul>
-                      </div>
-                      
-                      <ul class="uk-flex uk-flex-middle uk-flex-center uk-hidden@s">
-                          <li>
-                              <a class="font-bold text-[#fff] hover:text-[#fff]" href="" style="color: #fff;">
-                                  UZ
-                              </a>
-                          </li>
-                          
-                          <hr class="bg-[#fff] text-[#fff] h-[10px] w-[1px] opacity-[.72] mx-4">
-                          <li>                       
-                              <a href="" style="color: #fff;">
-                                  РУ
-                              </a>
-                          </li>
-                          <hr class="bg-[#fff] text-[#fff] h-[10px] w-[1px] opacity-[.72] mx-4">
-                          <li>
-                              <a href="" style="color: #fff;">
-                                  EN
-                              </a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </div>
-      
-  </div>
+
+<!-- form section start -->
+<section class="uk-section section-gradient bg-norepeat bg-cover relative uk-margin-large-top" style="background-image: url('../assets/images/main/form-backgrond.png');">
+    <div class="uk-container uk-container-large" uk-scrollspy="target: .animateText; cls: uk-animation-slide-left-medium;delay: 300">
+        
+        <div class="uk-grid-large uk-flex-center@m uk-flex-between@s uk-flex-center uk-flex-middle uk-child-width-1-2@s relative z-10" uk-grid>
+            
+            <div class="animateText">
+                <div class="uk-child-width-1-1 uk-grid-small" uk-grid>
+                    <div>
+                        <h2 class="heading-section text-[#fff]">
+                            Bizning boshqa klinikalardan
+                            ustunliklarimiz va farqli
+                            jihatlarimiz
+                        </h2>
+                    </div>
+                    <div>
+                        <p class="p-white">
+                            It was popularised in the 1960s with the release of Letraset
+                            sheets containing passages, and more recently
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="uk-width-1-3@m uk-width-1-2@s animateText" style="backdrop-filter: blur(10px);">
+                <form action="" class="uk-child-width-1-1 bg-[#fff] bg-opacity-[0.06] rounded-[12px] uk-padding-large uk-margin-remove-left" uk-grid>
+                    <div class="uk-padding-remove-left"> 
+                        <div class="uk-grid-small uk-child-width-1-1" uk-grid>
+                            <label for="" class="text-[#fff] uk-margin-left">Ismingiz</label>
+                            <div>
+                                <input type="text" placeholder="Huzayfa ibn Baxrom" class="text-[#fff] tracking-wide border bg-transparent focus:outline-none uk-width-1-1 py-4 px-8 rounded-[30px]">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-padding-remove-left">
+                        <div class="uk-grid-small uk-child-width-1-1" uk-grid>
+                            <label for="" class="text-[#fff] uk-margin-left">Telefon raqamingiz</label>
+                            <div>
+                                <input type="text" placeholder="+998 99 XXX XX XX" class="text-[#fff] tracking-wide border bg-transparent focus:outline-none uk-width-1-1 py-4 px-8 rounded-[30px]">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="">
+                            <div class="text-[#fff] uk-flex-center" uk-grid>
+                                <a href="" class="main-button-link bg-[#3175D4] uk-display-inline-block link-hover text-[#fff] wobble-vertical">Bog'lanish</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        
+    </div>
+</section>
+<!-- form section end -->
+
+
+<footer class="uk-section relative uk-margin-top uk-padding-remove-bottom" uk-scrollspy="target: .animateText; cls: uk-animation-slide-left-medium;delay: 300">
+    
+    <div class="border-b-4 border-t-4 border-[#1C314E] border-opacity-[.12] uk-padding-large uk-padding-remove-horizontal">
+        <div class="uk-container uk-container-large">
+            
+            <div class="uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center uk-text-left@s" uk-grid>
+                <div class="uk-width-expand animateText">
+                    <ul class="uk-grid-small uk-child-width-1-1" uk-grid>
+                        <li>
+                            <h2 class="text-[#1C314E] heading-section" style="font-family: 'Gilroy'; font-weight: 600;">Estet</h2>
+                        </li>
+                        <li>
+                            <p class="p-section">
+                                It was popularised in the 1960s with the release of Letraset
+                                sheets containing
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="uk-width-1-6@m uk-width-1-2@s animateText">
+                    <ul class="uk-grid-small uk-child-width-1-1 text-[#1C314E]" uk-grid>
+                        <li>
+                            <h4 class="text-[#1C314E] text-opacity-[0.60]" style="font-family: 'Gilroy'; font-weight: 600;">Web site</h4>
+                        </li>
+                        <li>
+                            <a href="" class="link-hover text-[#1C314E] line-animation-black font-semibold">
+                                Hizmatlarimiz
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="link-hover text-[#1C314E] line-animation-black font-semibold">
+                                Ishlarimiz
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="link-hover text-[#1C314E] line-animation-black font-semibold">
+                                Biz haqimizda
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="link-hover text-[#1C314E] line-animation-black font-semibold">
+                                Kontaktlar
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="uk-visible@s animateText">
+                    <ul class="uk-grid-small uk-child-width-1-1 text-[#1C314E]" uk-grid>
+                        <li>
+                            <h4 class="text-[#1C314E] text-opacity-[0.60]" style="font-family: 'Gilroy'; font-weight: 600;">Bizning ish vaqtimiz</h4>
+                        </li>
+                        <li>
+                            <div class="uk-child-width-1-2 uk-flex-between" uk-grid>
+                                <div>
+                                    <p class="text-[#1C314E] m-0 font-semibold">
+                                        Dush - Juma
+                                    </p>
+                                </div>
+                                
+                                <div>
+                                    <p class="text-[#1C314E] m-0 font-semibold">
+                                        8.00 - 18.00
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-child-width-1-2 uk-flex-between" uk-grid>
+                                <div>
+                                    <p class="text-[#1C314E] m-0 font-semibold">
+                                        Shanba
+                                    </p>
+                                </div>
+                                
+                                <div>
+                                    <p class="text-[#1C314E] m-0 font-semibold">
+                                        8.00 - 18.00
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-child-width-1-2 uk-flex-between" uk-grid>
+                                <div>
+                                    <p class="text-[#1C314E] m-0 font-semibold">
+                                        Yakshanba
+                                    </p>
+                                </div>
+                                
+                                <div>
+                                    <p class="text-[#1C314E] m-0 font-semibold">
+                                        -
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="animateText">
+                    <ul class="uk-grid-small uk-child-width-1-1 text-[#1C314E]  uk-text-center uk-text-left@s" uk-grid>
+                        <li>
+                            <h4 class="text-[#1C314E] text-opacity-[0.60]" style="font-family: 'Gilroy'; font-weight: 600;">Aloqaga chiqing</h4>
+                        </li>
+                        <li class="uk-flex uk-flex-center uk-flex-left@s">
+                            <a href="" class="link-hover text-[#1C314E] hover:text-[#fff] transition duration-100 uk-grid-small" uk-grid>
+                                <div>
+                                    <img src="../assets/images/svg/map-black.svg" alt="map">
+                                </div>
+                                <div>
+                                    <p class="text-lg text-[#1C34E] font-semibold">Estet klinikasini joylashuvi</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="uk-flex uk-flex-center uk-flex-left@s">
+                            <a href="" class="link-hover text-[#1C314E] hover:text-[#1C314E] transition duration-100 uk-grid-small" uk-grid>
+                                <div>
+                                    <img src="../assets/images/svg/call-black.svg" alt="map">
+                                </div>
+                                <div>
+                                    <p class="text-lg text-[#1C34E] font-semibold">Estet klinikasini joylashuvi</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="uk-flex uk-flex-center uk-flex-left@s">
+                            <a href="" class="link-hover text-[#1C314E] hover:text-[#1C314E] transition duration-100 uk-grid-small" uk-grid>
+                                <div>
+                                    <img src="../assets/images/svg/sms-black.svg" alt="map">
+                                </div>
+                                <div>
+                                    <p class="text-lg text-[#1C34E] font-semibold">Estet klinikasini joylashuvi</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="uk-container uk-container-large uk-padding">
+        
+        <div class="uk-flex-between uk-flex-middle uk-child-width-1-1 uk-child-width-auto@s uk-grid-small" uk-grid>
+            
+            <div>
+                <p class="text-[#1C314E] text-opacity-[.54] uk-text-center uk-tab-left@s">© 2021 Estet company</p>
+            </div>
+            
+            <div class="uk-flex uk-flex-center">
+                <a href="https://mount.uz/" class="link-hover">
+                    <img class="w-[80px]" src="../assets/images/svg/mount-logo.svg" alt="logo">
+                </a>
+            </div>
+            
+        </div>
+        
+    </div>
 </footer>
 
-<footer class="uk-section uk-padding-remove-vertical border-t-4 primary-color-bg" style="border-color: #ffffff12;">
-  <div class="uk-container uk-container-large py-10">
-      <div class="uk-grid uk-flex-between uk-flex-middle" uk-grid>
-          <div>
-              <div>
-                  <a href="" class="text-[#ffffff77] def-hover-none hover:text-[#ffffff77]">
-                      <p class="m-0">© 2021 Zemingroup</p>
-                  </a>
-              </div>
-          </div>
-          <div>
-              <div>
-                  <a href="https://mount.uz/" class="footer-mountain-img">
-                      <img class="w-[100px]" src="../assets/images/svg/Mountain-IT&DESIGN-Logo.svg" alt="Logo Mountainer IT&DESIGN">
-                  </a>
-              </div>
-          </div>
-      </div>
-  </div>
-</footer>
-<!-- footer section end -->
-  
-  
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit-icons.min.js"></script>
-  
-  <script src="../assets/js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit-icons.min.js"></script>
+
+<script src="../assets/js/main.js"></script>
+
+
 </body>
 </html>
