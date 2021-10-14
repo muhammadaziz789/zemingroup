@@ -13,7 +13,7 @@
     }
 
     .heading-section {
-        @apply text-[36px] tracking-wide m-0;
+        @apply text-[36px] sm:text-[40px] tracking-wide m-0;
     }
 
     .heading-section {

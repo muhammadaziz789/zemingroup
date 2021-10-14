@@ -46,12 +46,12 @@ window.addEventListener('DOMContentLoaded', (e) => {
 // index page number count code end
 
 const header = document.querySelector('.header');
-const headerIndex = document.querySelector('.header-index');
 const logoWhite = document.querySelector('.logo-white');
 const logoBlack = document.querySelector('.logo-black');
 const navLink = document.querySelectorAll('.nav-link');
-let navCallWhite = document.querySelector('.nav-call-white');
-let navCallBlack = document.querySelector('.nav-call-black');
+const navLinkIcon = document.querySelector('.navbar-call-icon');
+const navLinkIconBlack = document.querySelector('.navbar-call-icon-black');
+const navLinkItem = document.querySelectorAll('.navbar-item-link');
 let navMenuImgWhite = document.querySelector('.nav-menu-img-white');
 let navMenuImgBlack = document.querySelector('.nav-menu-img-black');
 let navItemActive = document.querySelector('.nav-item.active')
@@ -62,7 +62,7 @@ navLink.forEach(function(element) {
 
 header.style.background = '#1C314E';
 navMenuImgBlack.style.display = 'none'
-navCallBlack.style.display = 'none';
+navLinkIconBlack.style.display = 'none';
 logoBlack.style.display = 'none';
 window.addEventListener('scroll', (event) => {
     if (scrollY > 0) {
@@ -70,16 +70,20 @@ window.addEventListener('scroll', (event) => {
         logoBlack.style.display = 'block';
         
         navLink.forEach(function(element) {
-            element.style.color = '#1c3143';
-            element.style.fontWeight = '600';
+            element.style.color = '#1c314e';
         })
+
+        navLinkItem.forEach(function(el) {
+            el.style.fontWeight = '600';
+        })
+
+        navLinkIcon.style.display = 'none';
+        navLinkIconBlack.style.display = 'block';
+
         
         header.style.background = '#fff';
-        headerIndex.classList.remove('active');
         
         
-        navCallWhite.style.display = 'none';
-        navCallBlack.style.display = 'block';
         
         navMenuImgWhite.style.display = 'none';
         navMenuImgBlack.style.display = 'block'
@@ -91,12 +95,15 @@ window.addEventListener('scroll', (event) => {
         navLink.forEach(function(element) {
             element.style.color = 'white';
         })
+
+        navLinkItem.forEach(function(el) {
+            el.style.fontWeight = '300';
+        })
+
+        navLinkIcon.style.display = 'block';
+        navLinkIconBlack.style.display = 'none';
         
         header.style.background = '#1C314E';
-        headerIndex.classList.add('active');
-        
-        navCallBlack.style.display = 'none';
-        navCallWhite.style.display = 'block';;
         
         navMenuImgWhite.style.display = 'block';
         navMenuImgBlack.style.display = 'none'
@@ -105,31 +112,45 @@ window.addEventListener('scroll', (event) => {
 })
 
 
-// main text writting animation
-let dataText = [`Biz bilan tashqi ko'rinishdagi
-kamchiliklarni bartaraf eting!`];
-function typeWriter(text, i, fnCallback) {
-    if (i < (text.length)) {
-        document.querySelector(".main-title").innerHTML = text.substring(0, i+1) +'<span id="main-text" aria-hidden="true"></span>';
-        setTimeout(function() {
-            typeWriter(text, i + 1, fnCallback)
-        }, 80);
-    }
-    else if (typeof fnCallback == 'function') {
-        setTimeout(fnCallback, 700);
+// input value function start
+function isInputString(evt) {
+    const char = String.fromCharCode(evt.which);
+
+    if (!(/[0-9]/.test(char))) {
+
+    } else {
+        evt.preventDefault();
     }
 }
-function StartTextAnimation(i) {
-    if (typeof dataText[i] == 'undefined'){
-        setTimeout(function() {
-            StartTextAnimation(0);
-        }, 20000);
-    }
-    if (i < dataText[i].length) {
-        typeWriter(dataText[i], 0, function(){
-            StartTextAnimation(i + 1);
+
+const formInput = document.getElementById('inputPhoneMask');
+putMask(formInput);
+
+function putMask(el) {
+    if(el) {
+        const phoneMask = IMask(el, {
+            mask: '+{998} 00 000-00-00',
+            lazy: false,
+            placeholderChar: 'X'
         });
     }
 }
-StartTextAnimation(0);
+// input value function end
 
+
+const serviceInfoLinks = document.querySelectorAll('.service-button-link');
+const serviceContenWrappers = document.querySelectorAll('.service-content-wrapper');
+
+serviceInfoLinks.forEach(function(btn) {
+    btn.addEventListener('click', e => {
+        console.log(e.target.id);
+        serviceContenWrappers.forEach(function(wrp) {
+            console.log(wrp.dataset.target);
+            if (e.target.id == wrp.dataset.target) {
+                wrp.classList.add('active');
+            } else {
+                wrp.classList.remove('active');
+            }
+        })
+    })
+});

@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html::-webkit-scrollbar {
   width: 10px;
   height: 7px;
@@ -28,14 +32,8 @@ html::-webkit-scrollbar-track {
           box-shadow: inset 0px 0px 0px rgba(245, 245, 245, 0.88);
 }
 
-.navbar-active-link.active {
-  border: 1px solid white;
-  border-radius: 50%;
-  padding: 14px 30px;
-}
-
 .uk-offcanvas-bar {
-  background-color: #1c3143 !important;
+  background-color: #1c314e !important;
 }
 
 .draw-border {
@@ -106,8 +104,12 @@ html::-webkit-scrollbar-track {
   outline: 2px dotted #55d7dc;
 }
 
+.header-index.active {
+  background-color: transparent !important;
+}
+
 .main-button-link {
-  padding: 15px 44px;
+  padding: 20px 58px;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,8 +163,14 @@ html::-webkit-scrollbar-track {
   z-index: 1;
 }
 
-.header-index.active {
-  background-color: transparent !important;
+.service-card:hover .breath {
+  -webkit-animation: 1.5s ease 0s infinite normal intro-start-button-animation;
+          animation: 1.5s ease 0s infinite normal intro-start-button-animation;
+}
+
+.service-card:hover .breath:hover {
+  -webkit-box-shadow: 0 0 20px #f1f1f1;
+          box-shadow: 0 0 20px #f1f1f1;
 }
 
 .difference-item:hover .difference-circle-light {
@@ -218,6 +226,27 @@ html::-webkit-scrollbar-track {
   min-height: 440px !important;
   max-height: 1000px !important;
   height: auto !important;
+}
+
+.form-input::-webkit-input-placeholder {
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.24;
+}
+
+.form-input:focus::-webkit-input-placeholder {
+  font-weight: 300;
+  color: #fff;
+  opacity: 1;
+}
+
+#inputPhoneMask {
+  color: rgba(255, 255, 255, 0.24) !important;
+  font-weight: 300;
+}
+
+#inputPhoneMask:focus {
+  color: #fff !important;
 }
 
 .service-slide-wrapper {
@@ -458,16 +487,6 @@ html::-webkit-scrollbar-track {
   }
 }
 
-.breath {
-  -webkit-animation: 1.5s ease 0s infinite normal intro-start-button-animation;
-          animation: 1.5s ease 0s infinite normal intro-start-button-animation;
-}
-
-.breath:hover {
-  -webkit-box-shadow: 0 0 20px #f1f1f1;
-          box-shadow: 0 0 20px #f1f1f1;
-}
-
 @-webkit-keyframes intro-start-button-animation {
   0% {
     -webkit-box-shadow: 0 0 0 #f1f1f122;
@@ -576,8 +595,8 @@ html::-webkit-scrollbar-track {
   bottom: -7px;
   left: 0%;
   border-radius: 10px;
-  -webkit-transition: width 0.5s;
-  transition: width 0.5s;
+  -webkit-transition: width 0.2s;
+  transition: width 0.2s;
 }
 
 .line-animation-black {
@@ -609,13 +628,77 @@ html::-webkit-scrollbar-track {
 }
 
 .doctor-slider-next {
-  bottom: 50px;
+  bottom: 80px;
   right: 300px;
 }
 
 .doctor-slider-previous {
-  bottom: 50px;
-  right: 340px;
+  bottom: 80px;
+  right: 360px;
+}
+
+.services-item:hover .services-gradient {
+  -webkit-animation: appear 0.2s ease-in-out forwards;
+          animation: appear 0.2s ease-in-out forwards;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 117, 213, 0.001)), to(#013A6311));
+    background: linear-gradient(180deg, rgba(49, 117, 213, 0.001) 0%, #013A6311 100%);
+  }
+  20% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 117, 213, 0.1)), to(#013A6333));
+    background: linear-gradient(180deg, rgba(49, 117, 213, 0.1) 0%, #013A6333 100%);
+  }
+  40% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 117, 213, 0.1)), to(#013A6366));
+    background: linear-gradient(180deg, rgba(49, 117, 213, 0.1) 0%, #013A6366 100%);
+  }
+  60% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 117, 213, 0.2)), to(#013A6399));
+    background: linear-gradient(180deg, rgba(49, 117, 213, 0.2) 0%, #013A6399 100%);
+  }
+  80% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 117, 213, 0.26)), to(#013A63cc));
+    background: linear-gradient(180deg, rgba(49, 117, 213, 0.26) 0%, #013A63cc 100%);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 117, 213, 0.32)), to(#013A63));
+    background: linear-gradient(180deg, rgba(49, 117, 213, 0.32) 0%, #013A63 100%);
+  }
+}
+
+@keyframes appear {
+  0% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 117, 213, 0.001)), to(#013A6311));
+    background: linear-gradient(180deg, rgba(49, 117, 213, 0.001) 0%, #013A6311 100%);
+  }
+  20% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 117, 213, 0.1)), to(#013A6333));
+    background: linear-gradient(180deg, rgba(49, 117, 213, 0.1) 0%, #013A6333 100%);
+  }
+  40% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 117, 213, 0.1)), to(#013A6366));
+    background: linear-gradient(180deg, rgba(49, 117, 213, 0.1) 0%, #013A6366 100%);
+  }
+  60% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 117, 213, 0.2)), to(#013A6399));
+    background: linear-gradient(180deg, rgba(49, 117, 213, 0.2) 0%, #013A6399 100%);
+  }
+  80% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 117, 213, 0.26)), to(#013A63cc));
+    background: linear-gradient(180deg, rgba(49, 117, 213, 0.26) 0%, #013A63cc 100%);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 117, 213, 0.32)), to(#013A63));
+    background: linear-gradient(180deg, rgba(49, 117, 213, 0.32) 0%, #013A63 100%);
+  }
 }
 
 @media (max-width: 1400px) {
@@ -626,12 +709,12 @@ html::-webkit-scrollbar-track {
 
 @media (max-width: 1000px) {
   .doctor-slider-next {
-    bottom: 50px;
+    bottom: 35px;
     right: 40px;
   }
   .doctor-slider-previous {
-    bottom: 50px;
-    right: 80px;
+    bottom: 35px;
+    right: 100px;
   }
 }
 
@@ -645,12 +728,12 @@ html::-webkit-scrollbar-track {
   }
   .doctor-slider-next {
     top: 50%;
-    right: 0px;
+    right: 20px;
     bottom: auto;
   }
   .doctor-slider-previous {
     top: 50%;
-    left: 0px;
+    left: 20px;
     bottom: auto;
   }
   .clients-section .uk-slideshow-items {
@@ -658,5 +741,13 @@ html::-webkit-scrollbar-track {
     max-height: 1000px !important;
     height: auto !important;
   }
+}
+
+.service-content-wrapper {
+  display: none;
+}
+
+.service-content-wrapper.active {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
